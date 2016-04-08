@@ -1,7 +1,10 @@
+
+
 body{
 
 	background-image: url(.../images);
 	font-family: 'Pacifico', cursive;
+	background-color: #d6e0f5;
 }
 
 
@@ -17,8 +20,12 @@ h3{
 	text-align: center;
 	margin-top: 0;
 	}
+h4{
+	text-align: center;
+	margin-top: 0;
+	}
 img.pic {
-	width: 30%;
-	height: 40%;
-	padding-left: 300pt;
+	width: 60%;
+	height: 60%;
+	padding-left: 175pt;
 }

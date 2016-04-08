@@ -26,12 +26,12 @@ locationList[3] = "PFAC";
 locationList[4] = "PFAC";
 locationList[5] = "West Pond";
 
-captionList[0] = "Athletic Building (1)";
-captionList[1] = "Athletic Building (2)";
-captionList[2] = "Athletic Building (3)";
-captionList[3] = "Exterior of the PFAC (1)";
-captionList[4] = "Exterior of the PFAC (2)";
-captionList[5] = "West Pond in the low light";
+captionList[0] = "Main Building (1)";
+captionList[1] = "Main Building (2)";
+captionList[2] = "Athletic Building";
+captionList[3] = "PFAC Lit Up (1)";
+captionList[4] = "PFAC Lit Up (2)";
+captionList[5] = "West Pond in the Low Light";
 
 
 
@@ -40,6 +40,8 @@ window.onload = function(){
 
 
 document.getElementById("photos").src = picList[whichPic];
+document.getElementById("pictureLocation").innerHTML = locationList[whichPic];
+document.getElementById("caption").innerHTML = captionList[whichPic];
 
 fButtonListener = document.getElementById("forwardButton");
 bButtonListener = document.getElementById("backButton");
@@ -51,6 +53,8 @@ fButtonListener.addEventListener('click',function(event){
 		whichPic = 0;
 	}
 	document.getElementById("photos").src = picList[whichPic];
+document.getElementById("pictureLocation").innerHTML = locationList[whichPic];
+document.getElementById("caption").innerHTML = captionList[whichPic];
 });
 bButtonListener.addEventListener('click',function(event){
 	//alert("don't poke me either")
@@ -59,7 +63,9 @@ bButtonListener.addEventListener('click',function(event){
 		whichPic = picList.length-1;
 	}
 	document.getElementById("photos").src = picList[whichPic];
+	document.getElementById("pictureLocation").innerHTML = locationList[whichPic];
+	document.getElementById("caption").innerHTML = captionList[whichPic];
 });
 
-document.getElementById("pictureLocation").innerHTML = locationList[whichPic];
+
 }
