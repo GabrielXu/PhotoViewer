@@ -12,12 +12,12 @@ var bButtonListener;
 var whichPic = 0;
 
 
-picList[0] = "images/1.jpg";
-picList[1] = "images/2.jpg";
-picList[2] = "images/3.jpg";
-picList[3] = "images/4.jpg";
-picList[4] = "images/5.jpg";
-picList[5] = "images/6.jpg";
+picList[0] = "images/1.JPG";
+picList[1] = "images/2.JPG";
+picList[2] = "images/3.JPG";
+picList[3] = "images/4.JPG";
+picList[4] = "images/5.JPG";
+picList[5] = "images/6.JPG";
 
 locationList[0] = "Athletic Quad";
 locationList[1] = "Athletic Quad";
